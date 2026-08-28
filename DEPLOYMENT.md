@@ -8,6 +8,11 @@
 - Frontend: Vercel Next.js Project (Root Directory: `frontend`)
 - Database: 기존 Supabase 프로젝트
 
+현재 운영 주소:
+
+- Web: `https://scamflow.vercel.app`
+- API: `https://scamflow-api.onrender.com`
+
 기능 브랜치를 장기간 유지하지 않고 필요한 변경은 `develop`에서 검증한 뒤 Pull Request로 `main`에 병합합니다.
 
 ## Render
@@ -78,5 +83,5 @@ docker build --build-arg INSTALL_SCENARIO_RAG=false -t scamflow-api:ci backend
 
 ```bash
 curl https://scamflow-api.onrender.com/api/v1/health
-curl -I https://YOUR_VERCEL_DOMAIN
+curl -I https://scamflow.vercel.app
 ```
