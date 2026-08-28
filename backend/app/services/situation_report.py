@@ -12,6 +12,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
@@ -226,9 +227,14 @@ class SituationReportService:
                 ),
                 None,
             )
-            if not path:
-                raise RuntimeError("한글 PDF 글꼴을 찾을 수 없습니다.")
-            pdfmetrics.registerFont(TTFont(name, str(path)))
+            if path:
+                pdfmetrics.registerFont(TTFont(name, str(path)))
+            else:
+                # python:slim/CI에는 시스템 한글 글꼴이 없으므로 ReportLab의
+                # 내장 한국어 CID 글꼴을 사용해 배포 환경에서도 PDF 생성을 보장합니다.
+                name = "HYSMyeongJo-Medium"
+                if name not in pdfmetrics.getRegisteredFontNames():
+                    pdfmetrics.registerFont(UnicodeCIDFont(name))
         return name
 
     @staticmethod
