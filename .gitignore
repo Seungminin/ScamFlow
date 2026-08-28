@@ -89,5 +89,9 @@ data/*.csv
 /finance_ai_challenge_ideas.md
 *.ipynb
 
+# 공개 저장소에는 루트 README만 유지하고 내부 Markdown 문서는 제외합니다.
+*.md
+!/README.md
+
 # uv lock 파일은 포함 (재현 가능한 빌드를 위해)
 # uv.lock
