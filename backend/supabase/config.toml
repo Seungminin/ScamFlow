@@ -1,0 +1,10 @@
+project_id = "scamflow"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+
+[db]
+port = 54322
+major_version = 17

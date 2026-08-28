@@ -1,0 +1,50 @@
+services:
+  - type: web
+    name: scamflow-api
+    runtime: docker
+    plan: free
+    region: singapore
+    repo: https://github.com/Seungminin/ScamFlow.git
+    branch: main
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /api/v1/health
+    autoDeployTrigger: checksPass
+    buildFilter:
+      paths:
+        - backend/**
+        - render.yaml
+        - .github/workflows/ci.yml
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: ENABLE_SOLAR
+        value: "true"
+      - key: ENABLE_SOLAR_DETECTION
+        value: "true"
+      - key: ENABLE_OCR
+        value: "true"
+      - key: ENABLE_SUPABASE
+        value: "true"
+      - key: ENABLE_URL_REPUTATION
+        value: "true"
+      - key: RAG_ENABLED
+        value: "true"
+      - key: RAG_AUTO_BUILD_INDEX
+        value: "false"
+      - key: FRONTEND_ORIGINS
+        sync: false
+      - key: UPSTAGE_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: GOOGLE_SAFE_BROWSING_API_KEY
+        sync: false
+      - key: KISA_WHOIS_API_KEY
+        sync: false
+      - key: VIRUSTOTAL_API_KEY
+        sync: false

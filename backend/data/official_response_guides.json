@@ -1,0 +1,132 @@
+[
+  {
+    "id": "police-voice-phishing",
+    "agency": "경찰청",
+    "title": "보이스피싱이 의심되면 112 신고 및 직접 확인",
+    "url": "https://www.police.go.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1007&q_bbscttSn=20250618102632054",
+    "phone": "112",
+    "tags": ["family_impersonation", "institution_impersonation", "loan_fraud", "investment_fraud", "transferred_money"],
+    "content": "수사기관은 돈을 요구하지 않는다. 정부지원금과 대출은 공식 앱에서 확인한다. 가족 사칭 연락은 기존에 알고 있던 연락처로 직접 확인한다. 낯선 링크나 파일은 클릭하지 않는다. 보이스피싱이 의심되면 112에 신고한다."
+  },
+  {
+    "id": "kisa-118",
+    "agency": "한국인터넷진흥원",
+    "title": "스미싱·악성앱·피싱사이트 118 상담",
+    "url": "https://www.kisa.or.kr/cyberhelper118",
+    "phone": "118",
+    "tags": ["smishing", "remote_control_app", "clicked_link", "installed_app", "entered_info"],
+    "content": "스미싱 문자, 피싱사이트, 악성코드 감염, 개인정보 침해가 의심되면 국번 없이 118에서 상담하고 신고할 수 있다. 링크 클릭 후 앱을 설치했다면 네트워크를 끊고 다른 안전한 기기로 상담한다."
+  },
+  {
+    "id": "kisa-smishing",
+    "agency": "한국인터넷진흥원",
+    "title": "스미싱·큐싱 공격 대응 및 신고",
+    "url": "https://www.kisa.or.kr/1020601",
+    "phone": "118",
+    "tags": ["smishing", "clicked_link", "received_message"],
+    "content": "택배, 청첩장, 부고, 범칙금 등을 사칭한 링크는 악성앱 설치와 개인정보 유출로 이어질 수 있다. 의심 문자와 URL은 118 또는 카카오톡 보호나라 채널에서 확인한다."
+  },
+  {
+    "id": "fss-1332",
+    "agency": "금융감독원",
+    "title": "금융민원·보이스피싱 피해상담",
+    "url": "https://www.fss.or.kr/",
+    "phone": "1332",
+    "tags": ["entered_info", "transferred_money", "loan_fraud", "investment_fraud"],
+    "content": "금융사기 피해와 개인정보 노출, 대출 및 투자 사기가 의심되면 금융감독원 1332에서 피해상담을 받는다. 송금 피해 시에는 우선 112와 해당 금융회사 공식 대표번호로 지급정지를 요청한다."
+  },
+  {
+    "id": "account-info",
+    "agency": "금융결제원",
+    "title": "계좌정보통합관리서비스",
+    "url": "https://www.payinfo.or.kr/",
+    "phone": "1577-5500",
+    "tags": ["transferred_money", "entered_info"],
+    "content": "본인 계좌와 금융정보를 확인하고 추가 피해 방지를 위한 계좌 관리 절차를 진행한다. 본인도 모르게 개설된 계좌나 대출 여부를 확인하고, 긴급 지급정지는 112와 거래 금융회사에 먼저 요청한다."
+  },
+  {
+    "id": "police-integrated-response",
+    "agency": "경찰청 전기통신금융사기 통합대응단",
+    "title": "보이스피싱 피해 신고와 실시간 피해예방 조치",
+    "url": "https://www.counterscam112.go.kr/board/CONTENT_000000000009.do",
+    "phone": "112",
+    "tags": [
+      "transferred_money",
+      "entered_info",
+      "installed_app",
+      "family_impersonation",
+      "institution_impersonation"
+    ],
+    "content": "보이스피싱 피해를 확인했다면 24시간 운영되는 112 신고대응센터에 즉시 신고한다. 신고대응센터는 피해상담, 계좌 지급정지, 악성앱 삭제 등 실시간 피해예방 조치를 관계기관과 연계해 지원한다."
+  },
+  {
+    "id": "fsc-prevention-rules",
+    "agency": "금융위원회·금융감독원",
+    "title": "보이스피싱 피해예방 10계명",
+    "url": "https://www.fsc.go.kr/po010101/86250",
+    "phone": "112",
+    "tags": [
+      "received_message",
+      "family_impersonation",
+      "institution_impersonation",
+      "loan_fraud",
+      "smishing"
+    ],
+    "content": "기관이 자금 이체를 요구하거나 대출을 위해 타인 계좌 상환, 공탁금, 보증금을 먼저 요구하면 사기를 의심한다. 모르는 번호의 가족·지인 연락은 기존 번호로 직접 확인하고, 출처가 불분명한 링크와 앱 설치 요구에 응하지 않는다. 피해가 의심되면 경찰 또는 거래 금융회사 공식 대표번호로 도움을 요청한다."
+  },
+  {
+    "id": "fss-personal-info-exposure",
+    "agency": "금융감독원",
+    "title": "개인정보노출자 사고예방시스템 등록",
+    "url": "https://pd.fss.or.kr/",
+    "phone": "1332",
+    "tags": [
+      "entered_info",
+      "installed_app",
+      "personal_info_request",
+      "institution_impersonation"
+    ],
+    "content": "신분증 정보나 금융 개인정보가 노출됐다면 금융감독원 개인정보노출자 사고예방시스템에 노출 사실을 등록할 수 있다. 등록 정보는 금융회사에 공유되며 신규 계좌 개설, 신용카드 발급 등 일부 금융거래가 제한될 수 있으므로 안내사항을 확인한 뒤 본인이 직접 등록한다."
+  },
+  {
+    "id": "msafer-identity-protection",
+    "agency": "한국정보통신진흥협회",
+    "title": "명의도용방지서비스 가입현황 조회와 가입 제한",
+    "url": "https://www.msafer.or.kr/",
+    "phone": "1670-1382",
+    "tags": [
+      "entered_info",
+      "installed_app",
+      "personal_info_request"
+    ],
+    "content": "개인정보 유출로 휴대전화 명의도용이 우려되면 명의도용방지서비스에서 본인 명의 통신서비스 가입현황을 조회하고 가입제한 서비스를 확인한다. 본인이 모르는 회선이 확인되면 해당 통신사의 공식 고객센터로 직접 문의한다."
+  },
+  {
+    "id": "credit4u-credit-check",
+    "agency": "한국신용정보원",
+    "title": "본인신용정보 열람으로 명의도용 대출 확인",
+    "url": "https://www.credit4u.or.kr/",
+    "phone": null,
+    "tags": [
+      "entered_info",
+      "installed_app",
+      "transferred_money",
+      "personal_info_request"
+    ],
+    "content": "개인정보 유출 후 명의도용 대출이 우려되면 본인신용정보 열람서비스에서 본인 명의의 대출, 연체, 보증 정보를 확인한다. 모르는 금융거래가 발견되면 해당 금융회사의 공식 대표번호와 112에 직접 연락한다."
+  },
+  {
+    "id": "kisa-malicious-app-recovery",
+    "agency": "한국인터넷진흥원",
+    "title": "스미싱 악성앱 설치 후 복구 조치",
+    "url": "https://spam.kisa.or.kr/spam/na/ntt/selectNttInfo.do?bbsId=1001&mi=1019&nttSn=2701",
+    "phone": "118",
+    "tags": [
+      "smishing",
+      "remote_control_app",
+      "installed_app",
+      "entered_info"
+    ],
+    "content": "악성앱 설치가 의심되면 추가 금융서비스 이용을 멈추고 모바일 백신으로 점검·삭제하거나 휴대전화 서비스센터의 도움을 받는다. 감염된 기기에서 금융서비스를 이용했다면 인증서와 금융정보 유출 가능성을 고려해 공식 금융회사 안내에 따라 폐기·재발급하고, 주소록을 통한 2차 스미싱 가능성을 주변 지인에게 알린다. 국번 없이 118에서 상담할 수 있다."
+  }
+]

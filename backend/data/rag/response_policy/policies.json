@@ -1,0 +1,216 @@
+[
+  {
+    "id": "family-message-high",
+    "scenario": "family_impersonation",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "상대방이 알려준 번호가 아닌 기존에 알고 있던 가족 전화번호로 직접 확인하세요.",
+      "문화상품권이나 금전을 보내지 마세요.",
+      "인증번호와 개인정보를 전달하지 마세요."
+    ]
+  },
+  {
+    "id": "card-message-high",
+    "scenario": "card_payment_impersonation",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "문자에 표시된 상담번호로 전화하지 마세요.",
+      "카드 뒷면이나 공식 앱에서 확인한 카드사 대표번호로 발급·결제 내역을 확인하세요.",
+      "상대방에게 카드번호나 인증번호를 제공하지 마세요."
+    ]
+  },
+  {
+    "id": "financial-message-high",
+    "scenario": "financial_institution_impersonation",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "메시지에 적힌 번호가 아닌 금융회사 공식 대표번호로 직접 확인하세요.",
+      "인증번호·비밀번호·신분증 정보를 전달하지 마세요.",
+      "상대방의 송금 또는 앱 설치 요구를 중단하세요."
+    ]
+  },
+  {
+    "id": "government-message-high",
+    "scenario": "government_impersonation",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "수사기관이나 정부기관을 자처한 상대의 자금 이동 요구에 응하지 마세요.",
+      "해당 기관의 공식 홈페이지에 공개된 번호로 사실관계를 직접 확인하세요.",
+      "안전계좌·공탁금 명목의 송금을 하지 마세요."
+    ]
+  },
+  {
+    "id": "smishing-message-high",
+    "scenario": "smishing",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "메시지의 링크와 첨부파일을 열지 마세요.",
+      "택배·카드·기관 안내는 공식 앱이나 공식 홈페이지에서 직접 확인하세요.",
+      "의심 문자와 URL은 118 상담을 통해 확인할 수 있습니다."
+    ]
+  },
+  {
+    "id": "delivery-message-high",
+    "scenario": "delivery_customs_smishing",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "HIGH",
+    "actions": [
+      "문자에 포함된 통관·배송 조회 링크를 열지 마세요.",
+      "관세청이나 배송사의 공식 홈페이지에서 직접 조회하세요.",
+      "미납금이나 재배송비를 메시지의 계좌로 보내지 마세요."
+    ]
+  },
+  {
+    "id": "smishing-link-clicked",
+    "scenario": "smishing",
+    "exposure_stage": "LINK_CLICKED",
+    "risk_level": "HIGH",
+    "actions": [
+      "추가 개인정보 입력을 즉시 중단하세요.",
+      "의심 사이트를 닫고 추가 페이지로 이동하지 마세요.",
+      "파일이나 앱이 내려받아졌는지 확인하세요."
+    ]
+  },
+  {
+    "id": "delivery-link-clicked",
+    "scenario": "delivery_customs_smishing",
+    "exposure_stage": "LINK_CLICKED",
+    "risk_level": "HIGH",
+    "actions": [
+      "통관·배송 페이지에서 개인정보나 결제정보를 입력하지 마세요.",
+      "브라우저를 닫고 다운로드된 파일이 있는지 확인하세요.",
+      "공식 관세청·배송사 경로에서 실제 안내인지 다시 확인하세요."
+    ]
+  },
+  {
+    "id": "credential-info-entered",
+    "scenario": "credential_theft",
+    "exposure_stage": "INFO_ENTERED",
+    "risk_level": "*",
+    "actions": [
+      "노출된 비밀번호와 인증수단을 안전한 다른 기기에서 즉시 변경하세요.",
+      "거래 금융회사 공식 대표번호로 개인정보 노출 사실을 알리세요.",
+      "명의도용 거래와 신규 계좌·대출 발생 여부를 점검하세요."
+    ]
+  },
+  {
+    "id": "app-installed",
+    "scenario": "malicious_app",
+    "exposure_stage": "APP_INSTALLED",
+    "risk_level": "*",
+    "actions": [
+      "휴대전화의 Wi-Fi와 모바일 데이터를 끄세요.",
+      "감염이 의심되는 기기에서 금융 앱과 인증 서비스를 사용하지 마세요.",
+      "다른 안전한 기기로 118과 거래 금융회사에 연락해 보안 점검을 받으세요."
+    ]
+  },
+  {
+    "id": "money-sent-critical",
+    "scenario": "*",
+    "exposure_stage": "MONEY_SENT",
+    "risk_level": "*",
+    "actions": [
+      "즉시 송금 은행 또는 해당 금융회사에 지급정지를 요청하세요.",
+      "112에 신고하고 송금 계좌·시간·대화 기록을 제공할 준비를 하세요.",
+      "문자와 메신저 대화, 계좌번호, 이체확인증을 삭제하지 말고 보관하세요."
+    ]
+  },
+  {
+    "id": "safe-message-low",
+    "scenario": "safe_message",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "LOW",
+    "actions": [
+      "추가 행동을 요구받기 전까지 메시지 내용을 다시 확인하세요.",
+      "금융·기관 안내는 필요할 때 공식 앱이나 대표번호에서 직접 확인하세요."
+    ]
+  },
+  {
+    "id": "generic-message-caution",
+    "scenario": "*",
+    "exposure_stage": "MESSAGE_RECEIVED",
+    "risk_level": "*",
+    "actions": [
+      "상대방이 알려준 연락처가 아닌 공식 경로 또는 기존 연락처로 사실관계를 확인하세요.",
+      "확인이 끝날 때까지 송금·정보 제공·앱 설치를 하지 마세요."
+    ]
+  },
+  {
+    "id": "generic-link-clicked",
+    "scenario": "*",
+    "exposure_stage": "LINK_CLICKED",
+    "risk_level": "*",
+    "actions": [
+      "개인정보나 금융정보를 추가로 입력하지 마세요.",
+      "다운로드된 파일이나 설치된 앱이 있는지 확인하세요."
+    ]
+  },
+  {
+    "id": "generic-info-entered",
+    "scenario": "*",
+    "exposure_stage": "INFO_ENTERED",
+    "risk_level": "*",
+    "actions": [
+      "노출한 정보와 연결된 비밀번호·인증수단을 변경하세요.",
+      "금융정보를 입력했다면 해당 금융회사 공식 대표번호로 즉시 연락하세요."
+    ]
+  },
+  {
+    "id": "generic-app-installed",
+    "scenario": "*",
+    "exposure_stage": "APP_INSTALLED",
+    "risk_level": "*",
+    "actions": [
+      "기기의 네트워크 연결을 끊고 추가 조작을 중단하세요.",
+      "다른 안전한 기기로 118과 금융회사에 연락하세요."
+    ]
+  },
+  {
+    "id": "family-gift-card-purchased",
+    "scenario": "family_impersonation",
+    "exposure_stage": "GIFT_CARD_PURCHASED",
+    "risk_level": "*",
+    "actions": [
+      "상품권 번호를 절대 전달하지 말고 구매처에 즉시 결제 취소 가능 여부를 문의하세요.",
+      "평소 알고 있던 가족 번호로 직접 통화해 요청이 맞는지 확인하세요.",
+      "상품권 영수증과 대화 기록을 보관하세요."
+    ]
+  },
+  {
+    "id": "family-gift-card-code-shared",
+    "scenario": "family_impersonation",
+    "exposure_stage": "GIFT_CARD_CODE_SHARED",
+    "risk_level": "*",
+    "actions": [
+      "즉시 상품권 발행사에 연락해 해당 핀번호의 사용 중지를 요청하세요.",
+      "112에 신고하고 상품권 영수증과 전달한 번호, 대화 기록을 보관하세요.",
+      "상대방과의 추가 연락과 추가 구매를 중단하세요."
+    ]
+  },
+  {
+    "id": "institution-phone-called",
+    "scenario": "institution_impersonation",
+    "exposure_stage": "PHONE_CALLED",
+    "risk_level": "*",
+    "actions": [
+      "통화를 중단하고 해당 기관의 공식 홈페이지에 공개된 대표번호로 다시 확인하세요.",
+      "인증번호·금융정보·앱 설치 요구에 응하지 마세요."
+    ]
+  },
+  {
+    "id": "institution-remote-app-installed",
+    "scenario": "institution_impersonation",
+    "exposure_stage": "REMOTE_CONTROL_INSTALLED",
+    "risk_level": "*",
+    "actions": [
+      "휴대전화의 Wi-Fi와 모바일 데이터를 즉시 끄고 추가 조작을 중단하세요.",
+      "다른 안전한 기기로 118과 거래 금융회사 공식 대표번호에 연락하세요.",
+      "임의로 앱을 실행하거나 금융 앱에 로그인하지 마세요."
+    ]
+  }
+]

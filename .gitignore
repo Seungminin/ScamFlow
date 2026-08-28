@@ -1,0 +1,93 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== Virtual Environment =====
+.venv/
+.venv.*/
+venv/
+ENV/
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== Environment Variables =====
+# 절대 Git에 커밋하지 마세요!
+.env
+.env.local
+.env.*.local
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Testing =====
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ===== mypy =====
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ===== Distribution =====
+*.manifest
+*.spec
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Next.js =====
+node_modules/
+.next/
+frontend/.env.local
+frontend/.vercel/
+
+# ===== Project Specific =====
+# 데이터 파일 (민감 정보 포함 가능)
+data/*.json
+data/*.csv
+!data/.gitkeep
+!data/official_response_guides.json
+
+# 원본 학습 데이터와 재생성 가능한 Scenario RAG 인덱스
+/smishing.csv
+/backend/data/rag/scenario/
+
+# 공개 배포 저장소에는 원본 메시지·공모전 원고·작업 산출물을 포함하지 않습니다.
+/피싱 메시지/
+/2026 금융 AI Challenge 공모전/
+/research/
+/design/
+/finance_ai_challenge_ideas.md
+*.ipynb
+
+# uv lock 파일은 포함 (재현 가능한 빌드를 위해)
+# uv.lock
