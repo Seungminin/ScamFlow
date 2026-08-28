@@ -15,7 +15,6 @@
 name = "scamflow-agent"
 version = "0.1.0"
 description = "ScamFlow - 금융사기 탐지·검증·대응 AI Agent"
-readme = "README.md"
 requires-python = ">=3.11"
 
 # 핵심 의존성
