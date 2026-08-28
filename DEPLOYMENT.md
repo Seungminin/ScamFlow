@@ -29,7 +29,7 @@ FRONTEND_ORIGINS
 `FRONTEND_ORIGINS`에는 Vercel 운영 주소를 입력합니다. 여러 주소는 쉼표로 구분합니다.
 
 ```text
-https://scam-flow.vercel.app,https://your-custom-domain.example
+https://scamflow.vercel.app,https://your-custom-domain.example
 ```
 
 Docker 이미지에는 공개 Scenario RAG 데이터셋을 SHA-256으로 검증한 뒤 인덱스를 미리 생성합니다. API 키와 Supabase 키는 Docker 빌드에서 참조하지 않으며 런타임 환경변수로만 사용합니다.

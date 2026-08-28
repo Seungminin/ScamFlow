@@ -302,7 +302,7 @@ Vercel에서 저장소를 Import한 뒤 **Root Directory를 `frontend`로 지정
 배포된 FastAPI 주소를 다음 환경변수에 설정합니다.
 
 ```dotenv
-SCAMFLOW_BACKEND_URL=https://your-scamflow-api.example.com
+SCAMFLOW_BACKEND_URL=https://scamflow-api.onrender.com
 ```
 
 Next.js의 `/api/*` rewrite가 해당 FastAPI 서버로 요청을 전달하므로 브라우저에는 백엔드 주소가 직접 노출되지 않습니다. FastAPI는 Render, Railway, Fly.io 또는 다른 Python 컨테이너 환경에 별도로 배포해야 합니다.
